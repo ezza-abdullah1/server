@@ -2,10 +2,10 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "api/index.js",
+  "main": "/index.js",
   "type": "commonjs",
   "scripts": {
-    "start": "node api/index.js"
+    "start": "node /index.js"
   },
   "keywords": [],
   "author": "",
