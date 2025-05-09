@@ -1,10 +1,10 @@
 const express = require('express');
-const { createServer } = require('@vercel/node');
+const serverless = require('serverless-http');
 
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send('Hello from Express on Vercel!');
+  res.send('Hello from Express via Vercel serverless!');
 });
 
-module.exports = app;
+module.exports.handler = serverless(app);

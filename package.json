@@ -2,8 +2,8 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-   "main": "api/index.js",
-  "type": "module",
+  "main": "api/index.js",
+  "type": "commonjs",
   "scripts": {
     "start": "node api/index.js"
   },
