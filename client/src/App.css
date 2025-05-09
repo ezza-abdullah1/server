@@ -1,0 +1,158 @@
+/* client/src/App.css */
+.App {
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.col-md-6 {
+  flex: 1;
+  min-width: 300px;
+}
+
+.operation-section, .result-section, .users-section {
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #333;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea.form-control {
+  min-height: 100px;
+  font-family: monospace;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800;
+}
+
+.loading {
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+  color: #6c757d;
+}
+
+.error {
+  color: #dc3545;
+  padding: 10px;
+  background-color: #f8d7da;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.result-json {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 4px;
+  overflow: auto;
+  white-space: pre-wrap;
+  font-family: monospace;
+  max-height: 200px;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.users-table th, .users-table td {
+  border: 1px solid #dee2e6;
+  padding: 8px;
+  text-align: left;
+}
+
+.users-table th {
+  background-color: #e9ecef;
+}
+
+.users-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+  
+  .col-md-6 {
+    width: 100%;
+  }
+}
