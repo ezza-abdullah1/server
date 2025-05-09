@@ -1,10 +1,9 @@
 const express = require('express');
-const serverless = require('serverless-http');
-
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send('Hello from Express via Vercel serverless!');
+  res.send('Hello World!');
 });
 
-module.exports.handler = serverless(app);
+// Export the Express app as the default Serverless Function handler
+module.exports=app;
