@@ -3,13 +3,10 @@
   "builds": [
     {
       "src": "server.js",
-      "use": "@vercel/node",
-      "config": {
-        "nodeVersion": "20.x"
-      }
+      "use": "@vercel/node"
     },
     {
-      "src": "client/build/**",
+      "src": "client/dist/**",
       "use": "@vercel/static"
     }
   ],
@@ -20,7 +17,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "client/build/$1"
+      "dest": "client/dist/$1"
     }
   ]
 }
